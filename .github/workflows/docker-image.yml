@@ -1,0 +1,22 @@
+name: "Docker Image CI"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: "listing file"
+      run: ls
+    - uses: actions/checkout@v3
+    - name: "Build the Docker image"
+      run: ls
+    - name: "docker login"
+      run: docker login -u trap2002 --password dckr_pat_ig8YfgoTPgWD5tpHtqQkYu3QRSY
