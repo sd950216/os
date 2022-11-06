@@ -15,6 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-    - run: pwd
-    - run: echo starting
     - run: docker build . --file Dockerfile --tag trap-flask:$(date +%s)
