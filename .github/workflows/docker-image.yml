@@ -18,5 +18,3 @@ jobs:
     - uses: actions/checkout@v3
     - name: "Build the Docker image"
       run: ls
-    - name: "docker login"
-      run: docker login -u trap2002 --password dckr_pat_ig8YfgoTPgWD5tpHtqQkYu3QRSY
